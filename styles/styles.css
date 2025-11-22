@@ -308,4 +308,32 @@ footer {
     .sky-navbar .nav-link {
         margin: 0.25rem 0;
     }
+    @media (max-width: 991.98px) {
+    /* PRIVACY STRIP LAYOUT ON MOBILE */
+    .privacy-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .privacy-pill {
+        text-align: center;
+        padding-inline: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .privacy-buttons {
+        justify-content: center;
+        margin-left: 0;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .privacy-btn {
+        width: 100%;
+        max-width: 320px; /* so they don’t get too huge */
+        text-align: center;
+    }
+}
+
 }
