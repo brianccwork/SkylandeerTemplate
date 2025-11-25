@@ -2,31 +2,37 @@
   {
     "name": "Skylandeer",
     "role": "NA Pricing, Data, Design, Coding",
-    "image": "../images/contributors/SkylanDeer.avif"
+    "image": "../images/contributors/SkylanDeer.avif",
+    "link": "https://www.youtube.com/@theskylandeer"
   },
   {
     "name": "SpyroStudios",
     "role": "Coding, Design, Documentation",
-    "image": "../images/contributors/SpyroStudios.avif"
+    "image": "../images/contributors/SpyroStudios.avif",
+    "link": "https://www.youtube.com/@TheSpyroStudios"
   },
   {
     "name": "Brianccwork",
     "role": "Coding, Web Design",
-    "image": "../images/contributors/brianccwork.png"
+    "image": "../images/contributors/brianccwork.png",
+    "link": "https://briancraciun.com/"
   },
   {
     "name": "Djdigby",
     "role": "UK Pricing",
-    "image": "../images/contributors/DjDigby.avif"
+    "image": "../images/contributors/DjDigby.avif",
+    "link": "https://www.youtube.com/channel/UClBsw_2y1jcZC256E4u04_A"
   },
   {
     "name": "Rubyjrdx",
     "role": "EU Pricing",
-    "image": "../images/contributors/Ruby.avif"
+    "image": "../images/contributors/Ruby.avif",
+    "link": "https://www.twitch.tv/rubyjrdx"
   },
   {
     "name": "Prongobbles",
     "role": "AU Pricing",
-    "image": "../images/contributors/Prongobbles.avif"
+    "image": "../images/contributors/Prongobbles.avif",
+    "link": "https://www.youtube.com/channel/UCq4Lpglz33iCI4sI2XA2gdA"
   }
 ]

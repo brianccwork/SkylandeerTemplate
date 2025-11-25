@@ -6,11 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
         .then((res) => res.json())
         .then((contributors) => {
             contributors.forEach((c) => {
-
                 // Column
                 const col = document.createElement("div");
-                col.className =
-                    "col-12 col-md-4 d-flex justify-content-center";
+                col.className = "col-12 col-md-4 d-flex justify-content-center";
 
                 // Card wrapper
                 const card = document.createElement("div");
@@ -39,10 +37,25 @@ document.addEventListener("DOMContentLoaded", () => {
                 panel.appendChild(name);
                 panel.appendChild(role);
 
-                // Build
+                // Build card
                 card.appendChild(img);
                 card.appendChild(panel);
-                col.appendChild(card);
+
+                // If a link is provided, wrap the card in an <a>
+                if (c.link) {
+                    const link = document.createElement("a");
+                    link.href = c.link;
+                    link.target = "_blank";
+                    link.rel = "noopener noreferrer";
+                    link.className = "contributor-card-link d-block text-reset";
+
+                    link.appendChild(card);
+                    col.appendChild(link);
+                } else {
+                    // No link? Just use the card alone
+                    col.appendChild(card);
+                }
+
                 grid.appendChild(col);
             });
         })
