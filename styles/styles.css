@@ -103,13 +103,71 @@ a:hover::after {
   margin-top: 2.5rem;
   border-radius: 28px;
   overflow: hidden;
-  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.82);
 }
 
 .tracker-card img {
   width: 100%;
   display: block;
 }
+/* ---------- HERO BUTTON (Chunky Rounded Square) ---------- */
+.hero-square-btn {
+    background: #ffffff;
+    color: #000000;
+    font-weight: 800;
+    font-size: 1.25rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 2.8rem; /* wider */
+    height: 72px;     /* <-- makes it tall and chunky */
+    border-radius: 28px; /* thick rounded-square look */
+
+    text-decoration: none !important;
+    white-space: nowrap;
+
+    box-shadow: 0 14px 48px rgba(0, 0, 0, 0.32);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
+}
+
+/* Hover */
+.hero-square-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-4px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.40);
+}
+
+/* Remove underline effect */
+.hero-square-btn::after {
+    display: none !important;
+}
+
+
+
+
+.hero-heading-wrap {
+    display: flex;
+    align-items: center;
+    gap: 17rem;
+}
+
+/* Make the title shrink so the button sits right beside it */
+.hero-heading-wrap h1 {
+    flex: 0 1 auto;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .hero-heading-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
+
 
 /* ---------- PRIVACY STRIP (MAIN BODY 2) ---------- */
 .privacy-section {
@@ -316,7 +374,6 @@ footer {
 .lego-card a:hover::after {
   display: none !important;
 }
-
 
 /* ---------- NAVBAR + PRIVACY: MOBILE FIXES ---------- */
 @media (max-width: 991.98px) {
