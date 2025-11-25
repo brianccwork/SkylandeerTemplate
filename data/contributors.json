@@ -10,6 +10,11 @@
     "image": "../images/contributors/SpyroStudios.avif"
   },
   {
+    "name": "Brianccwork",
+    "role": "Coding, Web Design",
+    "image": "../images/contributors/brianccwork.png"
+  },
+  {
     "name": "Djdigby",
     "role": "UK Pricing",
     "image": "../images/contributors/DjDigby.avif"
@@ -23,10 +28,5 @@
     "name": "Prongobbles",
     "role": "AU Pricing",
     "image": "../images/contributors/Prongobbles.avif"
-  },
-  {
-    "name": "Don't forget to check out",
-    "role": "the LEGO Dimensions sheet!",
-    "image": "../images/contributors/SkylanDeermensions.avif"
   }
 ]
